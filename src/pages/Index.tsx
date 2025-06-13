@@ -17,9 +17,15 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen animated-gradient-bg">
-      {/* Floating Particles */}
-      <div className="floating-particles">
+    <div className="min-h-screen animated-gradient-bg gta-samp-effects">
+      {/* VHS Noise Overlay */}
+      <div className="vhs-noise"></div>
+
+      {/* TV Static */}
+      <div className="tv-static"></div>
+
+      {/* Floating Particles with Chromatic Aberration */}
+      <div className="floating-particles chromatic-aberration">
         {particles.map((particle) => (
           <div
             key={particle.id}
